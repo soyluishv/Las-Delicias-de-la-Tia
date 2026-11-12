@@ -1,0 +1,15 @@
+{
+  "name": "@las-delicias/worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "types": "wrangler types",
+    "db:migrate:local": "wrangler d1 migrations apply las-delicias-db --local",
+    "db:migrations:local": "wrangler d1 migrations list las-delicias-db --local"
+  },
+  "devDependencies": {
+    "wrangler": "^4.157.0"
+  }
+}

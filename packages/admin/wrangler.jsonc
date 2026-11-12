@@ -1,0 +1,22 @@
+{
+  "name": "las-delicias-admin",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-11-06",
+  "placement": {
+    "mode": "off"
+  },
+  "env": {
+    "production": {
+      "placement": {
+        "mode": "off"
+      },
+      "services": [
+        {
+          "binding": "API",
+          "service": "las-delicias-de-la-tia-api-prod",
+          "environment": ""
+        }
+      ]
+    }
+  }
+}

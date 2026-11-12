@@ -1,0 +1,86 @@
+node_modules/
+dist/
+dist-*/
+build/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+coverage/
+test-results/
+playwright-report/
+.vite/
+*.tsbuildinfo
+uploads/
+.intlayer/
+
+# Secretos locales de Cloudflare Workers
+.dev.vars
+
+# Estado local de Cloudflare Wrangler
+**/.wrangler/
+**/.dev.vars*
+
+# Variables de entorno privadas
+**/.env*
+!**/.env.example
+
+# Archivos de claves y certificados privados
+*.pem
+*.p12
+*.pfx
+*.key
+
+# Pruebas automatizadas excluidas de la publicación
+/e2e/
+**/__tests__/
+**/*.test.*
+**/*.spec.*
+/playwright.config.ts
+/packages/*/vitest.config.ts
+/packages/*/vitest.config.*.ts
+
+# Automatización de pruebas de GitHub
+/.github/workflows/ci.yml
+
+# Configuración auxiliar de desarrollo
+/.claude/
+
+# Componentes auxiliares que no pertenecen al respaldo de produccion
+/packages/docs/
+/packages/mobile/
+/packages/server/
+/prisma/
+/deploy/
+/docker-compose.yml
+
+# Automatizaciones auxiliares de GitHub
+/.github/workflows/demo.yml
+/.github/workflows/docs.yml
+/.github/workflows/mobile.yml
+
+# Archivos auxiliares y respaldos de configuracion
+/packages/shared/vitest.config.ts.respaldo
+/packages/storefront/vite.config.whatsapp.ts
+
+# Configuracion Docker/Nginx de arquitectura anterior
+/packages/admin/Dockerfile
+/packages/admin/nginx.conf
+/packages/storefront/Dockerfile
+/packages/storefront/nginx.conf
+
+# Documentacion heredada de la arquitectura anterior
+/README.md
+/PLAN.md
+/CHANGELOG.md
+/SECURITY.md
+
+# Archivos auxiliares no necesarios para el respaldo de produccion
+/CODE_OF_CONDUCT.md
+/CONTRIBUTING.md
+/.dockerignore
+/.github/
+
+# Documento inicial de integracion con informacion privada o historica
+/LEEME_Integracion_Identidad.txt

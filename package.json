@@ -1,0 +1,21 @@
+{
+  "name": "kitchenasty",
+  "version": "0.3.2",
+  "private": true,
+  "workspaces": [
+    "packages/admin",
+    "packages/storefront",
+    "packages/shared",
+    "packages/worker"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev -w packages/admin",
+    "dev:storefront": "npm run dev -w packages/storefront",
+    "dev:worker": "npm run dev -w packages/worker",
+    "build": "npm run build -w packages/shared && npm run build -w packages/admin && npm run build -w packages/storefront"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

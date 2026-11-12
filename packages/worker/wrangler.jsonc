@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "las-delicias-de-la-tia-api",
+  "main": "./src/index.ts",
+  "compatibility_date": "2026-11-03",
+  "triggers": { "crons": ["*/15 * * * *"] },
+  "r2_buckets": [
+    {
+      "binding": "ASSETS",
+      "bucket_name": "las-delicias-media"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "las-delicias-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
